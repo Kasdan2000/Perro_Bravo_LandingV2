@@ -1,0 +1,746 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  /*Paleta de colores*/
+  --color-primario: #305ae2;
+  --color-secundario-oscuro: #000111;
+  --color-secundario-claro: #f7f7f7;
+
+  /*Paleta tipografica*/
+  /* --fuente-titulos: "Humane", sans-serif;
+  --fuente-cuerpoFino: "Sharp Grotesk Book 20";
+  --fuente-cuerpoGrueso: "Sharp Grotesk Medium 20"; */
+}
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  /* src: url("fonts/SharpGrotesk-Medium20.eot"); */
+  src: /* url("fonts/SharpGrotesk-Medium20.eot?#iefix") format("embedded-opentype"), */ /* url("fonts/SharpGrotesk-Medium20.woff2")
+      format("woff2"), */ url("fonts/SharpGrotesk-Medium20.woff")
+    format("woff")
+    /* url("fonts/SharpGrotesk-Medium20.ttf") format("truetype"),
+    url("fonts/SharpGrotesk-Medium20.svg#SharpGrotesk-Medium20") format("svg") */;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  /* src: url("fonts/SharpGrotesk-Book20.eot"); */
+  src: /* url("fonts/SharpGrotesk-Book20.eot?#iefix") format("embedded-opentype"), */ /* url("fonts/SharpGrotesk-Book20.woff2")
+      format("woff2"), */ url("fonts/SharpGrotesk-Book20.woff")
+    format("woff")
+    /* url("fonts/SharpGrotesk-Book20.ttf") format("truetype"),
+    url("fonts/SharpGrotesk-Book20.svg#SharpGrotesk-Book20") format("svg") */;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Humane";
+  /* src: url("fonts/Humane-Bold.eot"); */
+  src: /* url("fonts/Humane-Bold.eot?#iefix") format("embedded-opentype"), */ /* url("fonts/Humane-Bold.woff2")
+      format("woff2"), */ url("fonts/Humane-Bold.woff")
+    format("woff")
+    /* url("fonts/Humane-Bold.ttf") format("truetype"),
+    url("fonts/Humane-Bold.svg#Humane-Bold") format("svg") */;
+  font-weight: 600;
+  font-style: normal;
+  /* text-rendering: optimizeLegibility; */
+}
+
+@font-face {
+  font-family: "Humane";
+  /* src: url("fonts/Humane-Regular.eot"); */
+  src: /* url("fonts/Humane-Regular.eot?#iefix") format("embedded-opentype"), */ /* url("fonts/Humane-Regular.woff2")
+      format("woff2"), */ url("fonts/Humane-Regular.woff")
+    format("woff")
+    /* url("fonts/Humane-Regular.ttf") format("truetype"),
+    url("fonts/Humane-Regular.svg#Humane-regular") format("svg") */;
+  font-style: normal;
+  font-weight: normal;
+  /* text-rendering: optimizeLegibility; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Humane";
+  font-weight: 600;
+  line-height: 1;
+}
+
+p,
+a,
+h6 {
+  font-family: "Sharp Grotesk";
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.2;
+}
+
+body {
+  background-color: var(--color-secundario-claro);
+}
+
+main {
+  background-color: var(--color-primario);
+}
+
+#entrada {
+  min-height: 50%;
+  color: var(--color-secundario-claro);
+}
+main section:nth-of-type(2) {
+  background-color: var(--color-secundario-oscuro);
+  min-height: 90vh;
+  max-height: 90vh;
+}
+main section:nth-of-type(3) {
+  height: 30vh;
+}
+
+.container-fluid {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  height: 1.5em;
+  padding-top: 4em;
+  margin-bottom: 5.5em;
+  color: var(--color-secundario-claro);
+}
+
+#menuHum span {
+  background: #f4f4f4;
+  border-radius: 10px;
+  margin: 7px 0;
+  display: block;
+  height: 3.4px;
+  width: 23px;
+  transform-origin: left;
+  transition: opacity 0.2s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a img {
+  width: 5.5em;
+}
+
+main section:nth-of-type(1) h1 {
+  font-size: 3.8em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 + img {
+  width: 67%;
+  margin: 0.5em auto 0;
+  display: block;
+}
+
+main section:nth-of-type(1) div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section:nth-of-type(1) div p {
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+
+#flecha {
+  width: 2.3em;
+}
+
+main section:nth-of-type(2) div h2 {
+  color: var(--color-primario);
+  font-size: 3.8em;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  padding: 0.7em 0 0.1em;
+  margin: 0;
+}
+
+p + section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+p + section article {
+  background-color: var(--color-secundario-claro);
+  color: var(--color-secundario-oscuro);
+  width: 47%;
+  border-radius: 15px;
+  padding: 0.8em;
+  margin-top: 1.3em;
+  height: 12.20125em;
+}
+
+p + section article p {
+  color: var(--color-secundario-oscuro) !important;
+  font-size: 0.85em !important;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+p + section article img {
+  width: 1.5em;
+}
+
+main section:nth-of-type(2) div p {
+  color: var(--color-secundario-claro);
+  font-size: 1.05em;
+}
+
+main section:nth-of-type(3) p,
+main section:nth-of-type(3) a {
+  font-weight: 500;
+  color: var(--color-secundario-claro);
+}
+
+main section:nth-of-type(3) p:nth-of-type(1) {
+  margin-top: 1.2em;
+}
+
+main section:nth-of-type(3) a {
+  font-size: 1.3em;
+  display: block;
+}
+
+main section:nth-of-type(3) h3 {
+  text-transform: uppercase;
+  color: var(--color-secundario-oscuro);
+  font-size: 3.8em;
+  font-weight: 400;
+  width: 90%;
+}
+
+footer article:nth-of-type(1) {
+  display: none;
+}
+
+footer article p,
+footer article a {
+  color: var(--color-primario);
+  margin: 0;
+  padding-top: 0.2em;
+  font-size: 0.95em;
+  display: block;
+}
+
+footer article h6 {
+  font-size: 1em;
+  margin: 1em 0 0.5em;
+  font-weight: 500;
+}
+
+footer article:nth-of-type(2) a:nth-of-type(1) {
+  text-decoration: none;
+}
+
+footer div {
+  margin: 1.2em 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer div p {
+  font-size: 0.8em;
+  margin-top: 2em;
+  font-weight: 500;
+}
+
+footer div a img {
+  margin-top: 1.2em;
+  width: 1.2em;
+}
+
+#anotacion {
+  margin-top: 1em;
+  padding: 0;
+  color: #7c7c7c;
+  font-size: 0.85em;
+  width: 70%;
+}
+
+#sobreNosotros {
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  main section:nth-of-type(1) h1 {
+    font-size: 4.3em;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    font-size: 4.3em;
+  }
+
+  main section:nth-of-type(2) {
+    min-height: 86vh;
+    max-height: 86vh;
+  }
+
+  p + section article {
+    height: 11.18125em;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  main section:nth-of-type(2) {
+    min-height: 82vh;
+    max-height: 82vh;
+  }
+
+  main section:nth-of-type(1) h1 {
+    font-size: 4.7em;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    font-size: 4.7em;
+  }
+
+  p + section article {
+    height: 10.16125em;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main section:nth-of-type(2) div p:nth-of-type(2) {
+    width: 60%;
+  }
+
+  #sobreNosotros {
+    display: block;
+    padding: 2.5em 0 0.5em;
+    margin: 0;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    padding: 0em 0 0.1em;
+    font-size: 5em;
+  }
+
+  main section:nth-of-type(3) p:nth-of-type(1) {
+    margin: 2.5em 0 0.5em;
+  }
+
+  main section:nth-of-type(3) {
+    height: 32vh;
+  }
+
+  main section:nth-of-type(3) h3 {
+    width: 58%;
+  }
+
+  main section:nth-of-type(1) h1 {
+    width: 90%;
+  }
+
+  main section:nth-of-type(2) {
+    max-height: 62vh;
+    min-height: 62vh;
+  }
+
+  main section:nth-of-type(2) article {
+    width: 23%;
+  }
+
+  h1 + img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #entrada {
+    height: 78vh;
+  }
+
+  h1 + img {
+    width: 40%;
+    margin: 2.5em auto 3em;
+    display: block;
+  }
+
+  main section:nth-of-type(2) div article {
+    width: 22%;
+    height: 11.161250000000003em;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    padding: 0em 0 0.1em;
+    font-size: 6em;
+  }
+
+  p + section article img {
+    width: 1.8em;
+  }
+
+  main section:nth-of-type(2) {
+    max-height: 77vh;
+    min-height: 77vh;
+  }
+
+  main section:nth-of-type(3) {
+    height: 45vh;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 5.5em;
+  }
+
+  main section:nth-of-type(3) p:nth-of-type(1) {
+    font-size: 1.1em;
+  }
+
+  main section:nth-of-type(3) a {
+    font-size: 1.5em;
+  }
+
+  p + section article p {
+    font-size: 1.05em !important;
+  }
+
+  footer {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  footer article:nth-of-type(1) {
+    display: block;
+  }
+
+  footer article:nth-of-type(1) a:nth-of-type(1) {
+    text-decoration: none;
+  }
+
+  footer article {
+    margin-top: 1em;
+  }
+
+  footer article h6 {
+    font-size: 1.3em;
+  }
+
+  footer article p,
+  footer article a {
+    padding: 0;
+    margin: 0;
+    line-height: 1.15em;
+  }
+
+  footer article:nth-of-type(2) {
+    margin-left: 6em;
+  }
+
+  footer article:nth-of-type(2) p,
+  footer article:nth-of-type(2) a {
+    font-size: 1.15em;
+  }
+
+  #anotacion {
+    font-size: 0.65em;
+    width: 100%;
+  }
+
+  footer div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container-fluid {
+    width: 92%;
+  }
+
+  #menuHum span {
+    margin: 7.5px 0;
+    width: 24px;
+  }
+
+  header nav a img {
+    width: 6em;
+  }
+
+  h1 {
+    font-size: 5.3em;
+  }
+
+  h1 + img {
+    width: 43%;
+    margin: 2.5em auto 4em;
+  }
+
+  #entrada {
+    height: 81vh;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    padding: 0em 0 0.1em;
+    font-size: 7em;
+  }
+
+  main section:nth-of-type(2) div p {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  p + section article img {
+    width: 2em;
+  }
+
+  main section:nth-of-type(2) {
+    max-height: 91vh;
+    min-height: 91vh;
+  }
+
+  main section:nth-of-type(2) div article {
+    width: 21%;
+  }
+
+  main section:nth-of-type(2) div article {
+    height: 15.161250000000003em;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    font-size: 8.2em;
+  }
+
+  main section:nth-of-type(2) div p:nth-of-type(2) {
+    width: 56%;
+  }
+
+  p + section article p {
+    margin-top: 1.2em !important;
+    font-size: 1.4em !important;
+  }
+
+  main section:nth-of-type(3) {
+    height: 55vh;
+  }
+
+  main section:nth-of-type(3) p:nth-of-type(1) {
+    font-size: 1.4em;
+  }
+
+  main section:nth-of-type(3) a {
+    font-size: 2em;
+  }
+
+  footer article:nth-of-type(2) {
+    margin-left: 8em;
+  }
+
+  footer article h6 {
+    font-size: 1.85em;
+  }
+
+  footer article:nth-of-type(1) p,
+  footer article:nth-of-type(1) a {
+    font-size: 1.3em;
+  }
+  footer article:nth-of-type(2) p,
+  footer article:nth-of-type(2) a {
+    font-size: 1.5em;
+  }
+
+  #anotacion {
+    font-size: 0.65em;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 8.2em;
+  }
+
+  #anotacion {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header nav a img {
+    width: 7em;
+  }
+  #menuHum span {
+    margin: 9.5px 0 0;
+    width: 26px;
+  }
+  main section:nth-of-type(1) h1 {
+    font-size: 5.7em;
+  }
+
+  h1 + img {
+    width: 46%;
+    margin: 2.5em auto 10em;
+    display: block;
+  }
+
+  #entrada {
+    height: 83vh;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    font-size: 9em;
+  }
+
+  main section:nth-of-type(2) div p {
+    font-size: 1.7em;
+  }
+
+  p + section {
+    margin: 3em auto 0;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 9em;
+  }
+
+  main section:nth-of-type(3) p:nth-of-type(1) {
+    font-size: 1.6em;
+  }
+
+  main section:nth-of-type(3) a {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    margin-bottom: 9.5em;
+  }
+
+  header nav a img {
+    width: 8em;
+  }
+
+  #menuHum {
+    margin-top: 0.05em;
+  }
+
+  #menuHum span {
+    margin: 10px 0 0;
+    width: 28px;
+  }
+
+  #entrada {
+    height: 80vh;
+  }
+
+  main section:nth-of-type(1) h1 {
+    font-size: 7.3em;
+  }
+
+  h1 + img {
+    width: 45%;
+    margin: 3em auto 8em;
+  }
+
+  main section:nth-of-type(1) div p {
+    margin-top: 1.8em;
+    font-size: 1.85em;
+  }
+
+  main section:nth-of-type(2) {
+    max-height: 89vh;
+    min-height: 89vh;
+  }
+
+  main section:nth-of-type(2) div h2 {
+    font-size: 12em;
+  }
+
+  main section:nth-of-type(2) div p {
+    font-size: 1.9em;
+  }
+
+  main section:nth-of-type(2) div article {
+    height: 19.16125em;
+    padding: 1.3em;
+  }
+
+  p + section article img {
+    width: 2.7em;
+  }
+
+  p + section article p {
+    font-size: 1.7em !important;
+  }
+
+  main section:nth-of-type(3) h3 {
+    font-size: 12em;
+  }
+
+  main section:nth-of-type(3) p:nth-of-type(1) {
+    font-size: 2.2em;
+  }
+
+  main section:nth-of-type(3) a {
+    font-size: 3.1em;
+  }
+
+  main section:nth-of-type(3) {
+    height: 57vh;
+  }
+
+  footer article h6 {
+    font-size: 2.4em;
+  }
+
+  footer article:nth-of-type(1) p,
+  footer article:nth-of-type(1) a {
+    font-size: 1.7em;
+  }
+
+  footer article:nth-of-type(2) p,
+  footer article:nth-of-type(2) a {
+    font-size: 2em;
+  }
+  footer article:nth-of-type(2) {
+    margin-left: 14em;
+  }
+  #anotacion {
+    font-size: 1.1em;
+  }
+
+  footer div p {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    font-weight: 500;
+  }
+
+  footer div a img {
+    margin-top: 1.2em;
+    width: 2em;
+  }
+
+  footer div {
+    margin: 2.8em 0 2.5em;
+  }
+}
